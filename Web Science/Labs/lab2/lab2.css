@@ -1,0 +1,26 @@
+html, body {
+	background-color: lightblue;
+}
+
+.header {
+	padding-bottom: 1em;
+}
+
+.panel-title {
+	font-size: 1.5em;
+}
+
+#location {
+	font-size: 3em;
+	font-weight: bold;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.panel-body, .panel-title {
+	font-weight: bold;
+}
+
+#button {
+	text-align: center;
+}

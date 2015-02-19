@@ -1,0 +1,87 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Science Lab 1</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Cabin" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="lab1.js"></script>
+    <script src="js/vendor/modernizr.js"></script>
+    <link rel="stylesheet" type="text/css" href="lab1.css">
+  </head>
+  <body>
+
+  <!--Header panel including title and author-->
+  <div class="row" id="header">
+    <div class="medium-13 columns">
+      <div class="panel">
+        <h1 class="blink">Tweet Ticker</h1> <h4>By: Peter Matla</h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+
+    <!--Tweets panel that is populated by the js .getJSON-->
+    <div class="medium-8 columns">
+      <h2> Tweets</h2>
+      <div class="ticker">
+      <div class="panel" id="tweets">
+
+      </div>
+      </div>
+    </div>
+
+    <!--Trending Hashtags panle that is populated by the js .getJSON-->
+    <div class="medium-4 columns">
+      <h2> Trending #'s</h2>
+      <div class="ticker">
+      <div class="panel" id="hashtags">
+
+      </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!--Footer panel that includes statistics about the tweets gathered-->
+  <div class="row">
+    <div class="medium-13 columns">
+      <div class="footer">
+      <div class="panel" id="stats">
+
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <!--Foundation js and css used for website structure-->
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+
+    <!--Easy Ticker jQuery used for smooth transistions among tweets and hashtags-->
+    <script src="easyticker/jquery.easy-ticker.js"></script>
+    <script> 
+        $('.ticker').easyTicker({
+         interval: 3000,
+         height: 800,
+         visible: 5,
+        });
+    </script>
+    <script> 
+        $('.footer').easyTicker({
+         direction: 'right',
+         interval: 3000,
+         height: 100,
+        });
+    </script>
+
+  </body>
+</html>

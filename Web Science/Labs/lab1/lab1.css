@@ -1,0 +1,75 @@
+html, body {
+	background-color: lightblue;
+	height: 100%;
+	padding-left: 2%;
+	padding-top: 1%;
+}
+
+h2 {
+	text-align: center;
+	border: 2px solid;
+	background-color: silver;
+	border-radius: 10px;
+}
+
+h1 {
+	text-align: center;
+	font-family: 'Lobster', Georgia;
+	font-size: 5em;
+}
+
+h2 {
+	font-family: 'Lobster', Georgia;
+	font-size: 2.5em;
+}
+
+h4 {
+	text-align: center;
+	font-family: 'Cabin', Arial;
+	font-size: 2em;
+}
+
+h5 {
+	text-align: center;
+	font-family: Georgia;
+	font-size: 1.2em;
+	font-weight: bold;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+#tweets, #hashtags {
+	height: 41em;
+	overflow: hidden;
+}
+
+.text {
+	height: 8em;
+}
+
+p {
+	font-family: 'Cabin', Arial;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+
+/* used for blinking animation on the title of the site */
+.blink {
+  animation: blink 3s steps(10, start) infinite;
+  -webkit-animation: blink 3s steps(10, start) infinite;
+}
+
+@keyframes blink {
+  to {
+    visibility: hidden;
+    color: red;
+  }
+}
+
+@-webkit-keyframes blink {
+  to {
+    visibility: hidden;
+    color: red;
+  }
+}
